@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
+   <!--- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+    <!--<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+   <link rel="stylesheet" href="/style.css">
+    <base href="/">
+</head>
+<body>
+ 
+    <div ng-app="app">
+
+        <navbar></navbar>
+        <div class="container">
+        
+            <ui-view>
+                
+            </ui-view>
+        </div>
+        
+          </div>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+    <script src="node_modules/auth0-js/build/auth0.js"></script>
+    <script src="node_modules/angular-auth0/dist/angular-auth0.js"></script>
+    <script src="node_modules/angular-jwt/dist/angular-jwt.js"></script>
+
+
+ <script src="app/app.js"></script>
+ <script src="app/app.run.js"></script>
+ <script src="app/navbar/navbar.directive.js"></script>
+ <script src="app/home/home.controller.js"></script>
+ <script src="app/callback/callback.controller.js"></script>
+ <script src="app/auth/auth.service.js"></script>
+ <script src="app/profile/profile.controller.js"></script>
+</body>
+</html>
